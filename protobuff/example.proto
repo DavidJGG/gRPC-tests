@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+service multiplicar {
+    rpc multiplicar (multiplicarRequest) returns (multiplicarReply);
+    rpc dividir (multiplicarRequest) returns (multiplicarReply);
+    rpc mega (megaRequest) returns (megaReply);
+}
+
+message multiplicarRequest {
+    int64 num1 = 1;
+    int64 num2 = 2;
+}
+
+message multiplicarReply {
+    int64 resultado = 1;
+}
+
+message megaRequest{
+    int32 size = 1;
+}
+
+message megaReply{
+    string secuencia = 1;
+}

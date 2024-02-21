@@ -1,0 +1,2 @@
+ Ejecutarlo sobre ../python/grpc_generated/
+ python -m grpc_tools.protoc -I ../../protobuff --python_out=. --pyi_out=. --grpc_python_out=. ../../protobuff/example.proto
